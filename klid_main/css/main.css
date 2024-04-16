@@ -1,7 +1,17 @@
-#wrap{
-  border: 1px solid red;
+#wrap {
   height: 1200px;
 }
-#header{
+#header {
   position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(52, 52, 54, 1);
+  width: 100%;
+}
+#header .inner {
+  max-width: 1440px;
+  height: 280px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid red;
 }
