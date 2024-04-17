@@ -1,51 +1,95 @@
+/* Gmarket Sans */
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/GmarketSansBold.woff2") format("woff2"),
+    url("../fonts/GmarketSansBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/GmarketSansMedium.woff2") format("woff2"),
+    url("../fonts/GmarketSansMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GmarketSansLight.woff2") format("woff2"),
+    url("../fonts/GmarketSansLight.woff") format("woff");
+}
+
+/* NotoSansKR */
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 100;
+  font-style: normal;
+  src: url("./fonts/NotoSans-Thin.eot?") format("eot"),
+    url("..fonts/NotoSans-Thin.otf") format("opentype"),
+    url("../fonts/NotoSans-Thin.woff") format("woff"),
+    url("../fonts/NotoSans-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 200;
+  font-style: normal;
+  src: url("./fonts/NotoSans-Light.eot?") format("eot"),
+    url("../fonts/NotoSans-Light.otf") format("opentype"),
+    url("../fonts/NotoSans-Light.woff") format("woff"),
+    url("../fonts/NotoSans-Light.woff2") format("woff2");
+}
+
 @font-face {
   font-family: "NotoSansKR";
   font-weight: 300;
   font-style: normal;
   src: url("./fonts/NotoSans-DemiLight.eot?") format("eot"),
-    url("./fonts/NotoSans-DemiLight.otf") format("opentype"),
-    url("./fonts/NotoSans-DemiLight.woff") format("woff"),
-    url("./fonts/NotoSans-DemiLight.woff2") format("woff2");
+    url("../fonts/NotoSans-DemiLight.otf") format("opentype"),
+    url("../fonts/NotoSans-DemiLight.woff") format("woff"),
+    url("../fonts/NotoSans-DemiLight.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "NotoSansKR";
   font-weight: 400;
   font-style: normal;
-  src: url("./fonts/NotoSans-Regular.eot?") format("eot"),
-    url("./fonts/NotoSans-Regular.otf") format("opentype"),
-    url("./fonts/NotoSans-Regular.woff") format("woff"),
-    url("./fonts/NotoSans-Regular.woff2") format("woff2");
+  src: url("../fonts/NotoSans-Regular.eot?") format("eot"),
+    url("../fonts/NotoSans-Regular.otf") format("opentype"),
+    url("../fonts/NotoSans-Regular.woff") format("woff"),
+    url("../fonts/NotoSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "NotoSansKR";
   font-weight: 500;
   font-style: normal;
-  src: url("./fonts/NotoSans-Medium.eot?") format("eot"),
-    url("./fonts/NotoSans-Medium.otf") format("opentype"),
-    url("./fonts/NotoSans-Medium.woff") format("woff"),
-    url("./fonts/NotoSans-Medium.woff2") format("woff2");
+  src: url("../fonts/NotoSans-Medium.eot?") format("eot"),
+    url("../fonts/NotoSans-Medium.otf") format("opentype"),
+    url("../fonts/NotoSans-Medium.woff") format("woff"),
+    url("../fonts/NotoSans-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "NotoSansKR";
   font-weight: 700;
   font-style: normal;
-  src: url("./fonts/NotoSans-Black.eot?") format("eot"),
-    url("./fonts/NotoSans-Black.otf") format("opentype"),
-    url("./fonts/NotoSans-Black.woff") format("woff"),
-    url("./fonts/NotoSans-Black.woff2") format("woff2");
+  src: url("../fonts/NotoSans-Black.eot?") format("eot"),
+    url("../fonts/NotoSans-Black.otf") format("opentype"),
+    url("../fonts/NotoSans-Black.woff") format("woff"),
+    url("../fonts/NotoSans-Black.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "NotoSansKR";
   font-weight: 900;
   font-style: normal;
-  src: url("./fonts/NotoSans-Bold.eot?") format("eot"),
-    url("./fonts/NotoSans-Bold.otf") format("opentype"),
-    url("./fonts/NotoSans-Bold.woff") format("woff"),
-    url("./fonts/NotoSans-Bold.woff2") format("woff2");
+  src: url("../fonts/NotoSans-Bold.eot?") format("eot"),
+    url("../fonts/NotoSans-Bold.otf") format("opentype"),
+    url("../fonts/NotoSans-Bold.woff") format("woff"),
+    url("../fonts/NotoSans-Bold.woff2") format("woff2");
 }
 
 /* 반응형, 모바일에서 모든요소의 패딩,선을 크기안에 포함시킴 */
@@ -57,10 +101,10 @@
 
 /* 컬러 변수 */
 :root {
-  --point-color1: #00a651;
-  --point-color2: #8bc63f;
-  --point-color3: #76ca9e;
-  --txt-color-400: #666;
+  --point-color1: #dae8f5;
+  --point-color2: #f2f2f2;
+  --point-color3: #f6f6f6;
+  --txt-color-400: #fff;
   --txt-color-500: #222;
   --txt-color-600: #000;
 }
@@ -259,11 +303,11 @@ select,
 textarea,
 button,
 table {
-  font-family: "Pretendard", "맑은 고딕", "malgun gothic", "Apple SD Gothic Neo",
-    sans-serif;
-  font-size: 18px;
+  font-family: "Gmarket Sans", "NotoSansKR", "Dotum", "돋움", "맑은 고딕",
+    "malgun gothic", "Apple SD Gothic Neo", sans-serif;
+  font-size: 16px;
   color: var(--txt-color-500);
-  line-height: 1.5;
+  line-height: 1.9em;
 }
 
 /* 스킵 네비 */

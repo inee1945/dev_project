@@ -20,7 +20,7 @@
       property="og:image"
       content="https://www.klid.or.kr/images/portal/imgMobile.gif"
     />
-    <title>한국지역정보개발원dddddd</title>
+    <title>한국지역정보개발원</title>
     <link rel="icon" href="images/common/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="images/common/favicon.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,8 +35,13 @@
     <meta property="og:title" content="한국지역정보개발원" />
     <meta name="title" content="한국지역정보개발원" />
 
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/ui-common.js"></script>
   </head>
   <body>
@@ -46,12 +51,99 @@
     <div id="wrap">
       <header id="header">
         <div class="inner">
-          <h2 class="logo">
-            <a href="https://klid.or.kr" alt="지역정보개발원"></a>
-          </h2>
+          <h1 class="logo">
+            <a href="https://klid.or.kr">
+              <img src="images/logo.png" alt="지역정보개발원" />
+            </a>
+          </h1>
+          <nav class="'gnb_wrap">
+            <ul class="gnb">
+              <li>
+                <h2><a href="#">주요사업</a></h2>
+                <ul class="depth2">
+                  <li><a href="#">주요사업소개</a></li>
+                  <li><a href="#">정보시스템운영</a></li>
+                  <li><a href="#">정보인프라운영</a></li>
+                  <li><a href="#">정보보호</a></li>
+                  <li><a href="#">공공서비스기획</a></li>
+                  <li><a href="#">지역디지털정책지원</a></li>
+                  <li><a href="#">대외협력</a></li>
+                  <li><a href="#">KLID 아카데미</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2><a href="#">알림마당</a></h2>
+                <ul class="depth2">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">입찰정보</a></li>
+                  <li><a href="#">채용공고</a></li>
+                  <li><a href="#">언론보도</a></li>
+                  <li><a href="#">기관동정</a></li>
+                  <li><a href="#">공모사업정보</a></li>
+                  <li><a href="#">자주찾는질문</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2><a href="#">지식마당</a></h2>
+                <ul class="depth2">
+                  <li><a href="#">디지털정책자료</a></li>
+                  <li><a href="#">지역정보화지</a></li>
+                  <li><a href="#">지역정보화백서</a></li>
+                  <li><a href="#">빅데이터사례집</a></li>
+                  <li><a href="#">카드뉴스</a></li>
+                  <li><a href="#">관련기관</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2><a href="#">열린경영</a></h2>
+                <ul class="depth2">
+                  <li><a href="#">경영공시</a></li>
+                  <li><a href="#">ESG경영</a></li>
+                  <li><a href="#">사회공헌</a></li>
+                  <li><a href="#">윤리경영</a></li>
+                  <li><a href="#">인권경영</a></li>
+                  <li><a href="#">안전보건경영</a></li>
+                  <li><a href="#">중소기업 상생협력</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2><a href="#">정보공개</a></h2>
+                <ul class="depth2">
+                  <li><a href="#">정보공개안내</a></li>
+                  <li><a href="#">정보공개청구</a></li>
+                  <li><a href="#">사전정보공표</a></li>
+                  <li><a href="#">정보목록</a></li>
+                  <li><a href="#">공공데이터개방</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2><a href="#">기관소개</a></h2>
+                <ul class="depth2">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">비전 및 목표</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">조직안내</a></li>
+                  <li><a href="#">CI소개</a></li>
+                  <li><a href="#">홍보자료</a></li>
+                  <li><a href="#">찾아오시는길</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="etc_wrap">
+            <button type="button" class="lang_btn"></button>
+            <button type="button" class="sitemap_btn"></button>
+          </div>
         </div>
-        <main id="container"></main>
       </header>
+      <main id="container">
+        <section class="main_slider">
+          <h2 class="blind">메인 슬라이더</h2>
+          <img class="s_img" src="images/slider1.jpg" alt="" />
+          <!-- <img class="s_img" src="images/slider2.jpg" alt="">
+        <img class="s_img" src="images/slider3.jpg" alt=""> -->
+        </section>
+      </main>
     </div>
   </body>
 </html>
