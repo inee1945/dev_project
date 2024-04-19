@@ -1,119 +1,112 @@
 /* 컬러 변수 */
 :root {
-  --point-color1: #dae8f5;
+  --point-color1: #ed1c24;
   --point-color2: #f2f2f2;
   --point-color3: #f6f6f6;
   --txt-color-400: #fff;
-  --txt-color-500: #222;
+  --txt-color-500: #1f1f1f;
   --txt-color-600: #000;
 }
-
 #wrap {
   height: 1200px;
 }
+
+.header_wrap {
+}
 #header {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   background: rgba(25, 28, 50, 0);
   z-index: 9999;
+  background-color: #fff;
+  height: 147px;
 }
 
-#header::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background: rgba(25, 28, 50, 1);
-  display: none;
+#header .header_top {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0 80px;
 }
-
-#header .inner {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
+.header_top .header_link {
+}
+.header_top > ul {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: flex-end;
 }
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .inner {
+  padding: 40px 80px;
+  width: 100%;
+  height: 120px;
 
-#header .inner .logo {
-  max-width: 300px;
-  height: auto;
-  margin: 17px 15px 0 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  position: relative;
 }
 #header .inner .logo a {
   display: inline;
   margin: 0 35px 0 0;
 }
-
-.gnb > li > a:hover #header::before {
+#header .gnb_wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
   display: block;
 }
-
-#header .gnb_wrap {
-  display: inline-block;
-  position: relative;
-  height: 100%;
-}
-
 #header .gnb {
-  position: absolute;
+  justify-content: flex-end;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #header .gnb > li {
-  font-size: 18px;
+  padding: 0 50px 0 0;
+}
+#header .gnb > li > a {
+  display: block;
+  font-size: 20px;
+  position: relative;
+  padding: 0 0 40px;
+}
+#header .header_sec03 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#header .gnb > li a {
-  color: #fff;
-  margin: 0 67px 0 0;
+#header .lang {
+  margin-right: 33px;
   position: relative;
+}
+#header .lang p > span {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 #header .gnb .depth2 {
-  position: absolute;
-  padding-top: 30px;
+  display: none;
 }
 
-#header .gnb .main_slider > li {
+#container {
+  /* flex구조에서 akrgin auto 사용시 반대방향깢지 밀림 */
+  padding-top: 100px;
+  display: flex;
+}
+.section {
+  padding-bottom: 140px;
 }
 
-#header .gnb .depth2 > li > a {
-  display: inline-block;
-  font-size: 14px;
-  width: 100%;
-}
-#header .etc_wrap {
-  margin-left: auto;
-}
-
-#header .etc_wrap .lang_btn {
-  width: 24px;
-  height: 23px;
-  margin: 24px 10px 0 0;
-  border: none;
-  background: url(../images/btn_eng.png) no-repeat;
-}
-
-#header .etc_wrap .sitemap_btn {
-  width: 24px;
-  height: 23px;
-  margin: 24px 10px 0 0;
-  border: none;
-  background: url(../images/btn_menu.png) no-repeat;
-}
-
-#container .main_slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-#container .main_slider .s_img {
-  width: 3125px;
-  height: 760px;
-  object-fit: cover;
+.section01 {
+  padding: 180px 0;
+  text-align: center;
+  background: url(../images/pc_section01_5.png) no-repeat center / cover;
 }
