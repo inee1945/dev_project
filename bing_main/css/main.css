@@ -96,6 +96,12 @@
   display: none;
 }
 
+.flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 컨테이너  */
 #container {
   /* flex구조에서 akrgin auto 사용시 반대방향깢지 밀림 */
   padding-top: 100px;
@@ -109,4 +115,51 @@
   padding: 180px 0;
   text-align: center;
   background: url(../images/pc_section01_5.png) no-repeat center / cover;
+}
+
+.section01 .logo_box {
+   position: relative; 
+  display: block;
+}
+
+.section01 .logo_box .main_banner{
+  display: block;
+  margin: 0 auto;
+}
+.section01 .logo_box .mo{
+  display: none;
+}
+.section01 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+
+/* 서치박스 */
+.search_box {
+  max-width: 1020px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  margin: 40px auto 0;
+  justify-content: space-between;
+}
+.search_box .search {
+  width: 100%;
+  padding: 0 15px 0 55px;
+  justify-content: space-between;
+  height: 100%;
+}
+.search_box .search button{
+  max-width: 180px;
+  width: 22%;
+  height: 55px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 27.5px;
+  box-shadow: inset 0px 5px 10px 0 rgba(53, 53, 53, 0.11);
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+
 }
