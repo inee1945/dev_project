@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
 }
-#header .inner {
+#header .header_container  {
   padding: 40px 80px;
   width: 100%;
   /* height: 120px; */
@@ -72,7 +72,7 @@
   /* background: #fff; */
   position: relative;
 }
-#header .inner .logo a {
+#header .header_container  .logo a {
   display: inline;
   margin: 0 35px 0 0;
 }
@@ -84,14 +84,14 @@
   z-index: 20;
   display: block;
 }
-.gnb01 .gnb {
+.gnb01 .depth01 {
   justify-content: flex-end;
 }
-.gnb01 .gnb > li {
+.gnb01 .depth01 li {
   position: relative;
   padding: 45px 80px 0 0;
 }
-.gnb01 .gnb > li > a {
+.gnb01 .depth01 li>a {
   display: block;
   font-size: 20px;
   position: relative;
@@ -99,7 +99,36 @@
   white-space: nowrap;
   /* font-weight: bold; */
 }
-.gnb01 .depth2 {
+.gnb01 .depth01 li:hover >a{
+  color: #e0462e;
+}
+.gnb01 .depth01>li:hover > a::before {
+  display: block;
+}
+.gnb01 .depth01>li:hover > a::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius:50% ;
+  background-color:#e0462e;
+  position: absolute;
+  top: 4px;
+  right: -11px
+}
+.gnb01 .depth01>li > a::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e0462e;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.gnb01 .depth02 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -109,7 +138,7 @@
   visibility: hidden;
   padding-top: 20px;
 }
-.gnb01 .depth2 li a {
+.gnb01 .depth02 li>a {
   padding: 7px 0;
   display: block;
   font-size: 18px;
@@ -117,25 +146,36 @@
   text-align: left;
   letter-spacing: -0.02em;
 }
-.gnb01 .depth2 li:hover a {
+.gnb01 .depth02 li:hover a {
   color: #e0462e;
   white-space: nowrap;
 }
 
-#header .lang {
+.lang {
   margin-right: 33px;
   position: relative;
 }
-#header .lang p > span {
+.lang p > span,
+.ul li a {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: -0.5px;
 }
 .lang p span.triangle {
-  display: none;
-  margin: 0px 0 1px;
+  margin: 0px 0 0 10px;
   font-size: 0;
   line-height: 1;
+}
+.lang ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 130%;
+  text-align: center;
+  display: none;
+  background-color: #fff;
+  border-radius: 20px;
+  padding:10px 0;
 }
 .lang ul li a {
   font-weight: bold;
