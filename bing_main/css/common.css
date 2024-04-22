@@ -226,8 +226,19 @@ button,
 table {
   font-family: "Poppins", "Noto Sans KR", "Dotum", "돋움", "맑은 고딕",
     "malgun gothic", "Apple SD Gothic Neo", sans-serif;
+  line-height: 30px;
+  letter-spacing: -0.09em;
+
   font-size: 14px;
   color: var(--txt-color-500);
+}
+span,
+strong,
+b,
+em {
+  color: inherit;
+  font-size: 100%;
+  line-height: inherit;
 }
 
 /* 스킵 네비 */

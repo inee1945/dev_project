@@ -28,12 +28,36 @@
   border-bottom: 1px solid #e7e7e7;
   padding: 0 80px;
 }
-.header_top .header_link {
-}
-.header_top > ul {
-  display: flex;
-  align-items: center;
+.header_top ul {
   justify-content: flex-end;
+}
+.header_top ul li + li {
+  padding-left: 20px;
+  position: relative;
+}
+.header_top ul li span {
+  color: #1b1b1b;
+}
+.header_top ul li a {
+  text-decoration: none;
+  color: var(--txt-color-500);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+.header_top ul li img {
+  margin-left: 5px;
+  max-width: 100%;
+  vertical-align: top;
+}
+.header_top ul li + li::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%, -50%);
 }
 .flex_center {
   display: flex;
@@ -96,16 +120,9 @@
   display: none;
 }
 
-.flex_center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 /* 컨테이너  */
 #container {
-  /* flex구조에서 akrgin auto 사용시 반대방향깢지 밀림 */
-  padding-top: 100px;
-  display: flex;
+  display: block;
 }
 .section {
   padding-bottom: 140px;
@@ -118,22 +135,21 @@
 }
 
 .section01 .logo_box {
-   position: relative; 
+  position: relative;
   display: block;
 }
 
-.section01 .logo_box .main_banner{
+.section01 .logo_box .main_banner {
   display: block;
   margin: 0 auto;
 }
-.section01 .logo_box .mo{
+.section01 .logo_box .mo {
   display: none;
 }
 .section01 img {
   max-width: 100%;
   vertical-align: top;
 }
-
 
 /* 서치박스 */
 .search_box {
@@ -151,7 +167,7 @@
   justify-content: space-between;
   height: 100%;
 }
-.search_box .search button{
+.search_box .search button {
   max-width: 180px;
   width: 22%;
   height: 55px;
@@ -161,5 +177,16 @@
   border-radius: 27.5px;
   box-shadow: inset 0px 5px 10px 0 rgba(53, 53, 53, 0.11);
   background-image: linear-gradient(to top, #ed1c24, #e0462e);
-
+}
+.keyword_box {
+  margin-top: 25px;
+}
+.keyword_box li {
+  font-size: 12px;
+  min-width: 120px;
+  height: 37px;
+  box-shadow: 0px 2px 9.8px 0.2px rgba(0, 0, 0, 0.08);
+  border-radius: 18.5px;
+  border: 1px solid #edecef;
+  padding: 0 20px;
 }
