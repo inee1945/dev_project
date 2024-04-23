@@ -1,17 +1,21 @@
-@font-face {
+/* @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Binggrae-Bold.eot") format("eot"),
-    url("../fonts/Binggrae-Bold.woff") format("woff");
+ 
+  src: 
+  url(../fonts/Binggrae-Bold.woff) format('woff'),
+ 
 }
 @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Binggrae.eot") format("eot"),
-    url("../fonts/Binggrae.woff") format("woff");
-}
+  src: url("../fonts/Binggrae.eot") format("eot");
+  src: url(../fonts/Binggrae.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/Binggrae.woff) format('woff'),
+  url(../fonts/Binggrae.ttf) format('truetype');
+} */
 /* 반응형, 모바일에서 모든요소의 패딩,선을 크기안에 포함시킴 */
 *,
 ::before,
