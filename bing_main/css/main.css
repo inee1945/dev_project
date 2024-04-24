@@ -150,6 +150,7 @@
   visibility: visible;
   transition: all 1s 0.4s;
 }
+
 .gnb01 .depth02 li>a {
   padding: 7px 0;
   display: block;
@@ -197,7 +198,6 @@
 }
 #header .hamberger {
   width: 26px;
-  height: 18px;
   position: relative;
 }
 .hamberger a {
@@ -205,17 +205,32 @@
   width: 100%;
   height: 100%;
 }
-.hamberger a span + span {
-  margin-top: 8px;
-}
-
 .hamberger a span {
   display: block;
   width: 100%;
   height: 2px;
   background-color: #000;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
+.hamberger a span + span {
+  margin-top: 8px;
+}
+
+.hamberger.checked a span:nth-child(1){
+  transform: rotate(-45deg);
+}
+
+.hamberger.checked a span:nth-child(2) {
+    transform: rotate(45deg);
+    margin-top: -2px;
+}
+
+.hamberger.checked a span:nth-child(3) {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+
 .hamberger_menu {
   width: 100%;
   height: 100%;
