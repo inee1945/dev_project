@@ -1,0 +1,23 @@
+/* 컬러 변수 */
+:root {
+  --point-color1: #ed1c24;
+  --point-color2: #f2f2f2;
+  --point-color3: #f6f6f6;
+  --txt-color-400: #fff;
+  --txt-color-500: #1f1f1f;
+  --txt-color-600: #000;
+}
+#wrap {
+  height: 1200px;
+}
+#header {
+  width: 100%;
+  top: 0;
+  left:0;
+  height: 147px;
+  z-index: 9999;
+}
+
+#header .header_top_wrap{
+
+}
