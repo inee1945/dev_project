@@ -17,7 +17,32 @@
   height: 147px;
   z-index: 9999;
 }
-
+#header.fixed{
+  position: fixed;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+#header .inner{
+  border: 1px solid yellowgreen;
+}
 #header .header_top_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 30px;
+}
+#header .header_top_wrap li>{
+  font-size: 14px;
+  color: #1b1b1b;
+}
+#header .header_top_wrap li+li{
+ padding-left: 20px;
+}
+#header .header_top_wrap li>a{
+  text-align: center;
+  margin-top: 5px;
+}
 
+.header_top_wrap li>a>img{
+  margin-left: 5px;
 }
