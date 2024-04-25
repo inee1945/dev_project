@@ -358,3 +358,11 @@
   border: 1px solid #edecef;
   padding: 0 20px;
 }
+
+/*mail_slider  */
+.sec02_slider {
+  max-width: 1650px;
+  width: 100%;
+  margin: 0 auto 140px;
+  position: relative;
+}

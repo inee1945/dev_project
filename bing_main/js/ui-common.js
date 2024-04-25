@@ -35,10 +35,12 @@ $(document).ready(function () {
     }
   });
   //메인 슬라이더
-  const mainSlider = new Swiper(".main_slider .swiper", {
+  const mainSlider = new Swiper(".sec02_slider .swiper", {
     // Optional parameters
     loop: true,
 
+    slidesPerView: 7,
+    spaceBetween: 30,
     // If we need pagination
     pagination: {
       // el: ".swiper-pagination",
