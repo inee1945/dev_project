@@ -27,5 +27,28 @@ $(document).ready(function () {
       });
     }
   });
-  //메인 슬라이더
+  //상품 슬라이더
+  let mainProduct = new Swiper(".main_product .swiper", {
+    slidesPerView: 6,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // 브랜드 슬라이더
+  let mainBrand = new Swiper(".main_brand .swiper", {
+    slidesPerView: 4,
+    breakpoints: {
+      // PC perview
+      1201: {
+        slidesPerView: 6,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
