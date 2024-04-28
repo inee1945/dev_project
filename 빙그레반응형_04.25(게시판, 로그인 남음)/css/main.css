@@ -498,6 +498,7 @@
 }
 /* 제목 공통 */
 .inner .tit_wrap {
+  border: 1px solid red;
   font-family: 'Binggrae', sans-serif;
   font-weight: 700;
   font-size: 38px;
