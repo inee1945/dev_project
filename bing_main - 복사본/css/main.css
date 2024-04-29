@@ -835,7 +835,7 @@
 }
 
 
-/* 푸터 */
+/* footer */
 .footer {
   background: #1b1b1b;
   padding: 40px 50px 30px;
@@ -899,14 +899,56 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.footer .chat_bot{
+  position: relative;
+  display: flex;
+}
+.footer .chat_bot:hover p{
+  display: block;
+}
+.footer .chat_bot p{
+  border-radius: 22.5px;
+  box-shadow: 0px 3px 7px 0 rgb(0 0 0 / 5%);
+  background-color: #fff;
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  right:82px;
+  width: 160px;
+  height: 45px;    
+  transform: translateY(-50%);
+  display: none;
+}
+.btn_wrap .shop_btn{
+  background: #fff;;
+  color: #1b1b1b;
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+  letter-spacing: normal;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 10px;  
+}
+.btn_wrap .scroll_btn{
+  background: #000;
+  font-size: 14px;
+  letter-spacing: normal;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 10px;
+}
 
+.btn_wrap .scroll_btn img{
+    transform: rotate(180deg);
+}
 
 
 
 .footer .top_btn {
+  display: flex;
   width: 55px;
   height: 55px;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 .footer .inner .btn_wrap {
   position: fixed;
