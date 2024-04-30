@@ -24,6 +24,7 @@
   background: #fff;
   border-bottom: 1px solid #e0e0e0;
 }
+
 #header .inner{
   position: relative;
 }
@@ -180,7 +181,12 @@
   transition: all 0.8s;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.08);
 }
-
+/* 로그인 */
+#header .login{
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 700;
+}
 
 /* lang*/
 #header .section_right {
@@ -959,16 +965,57 @@
 
 
 
+#header .m_gnb_wrap {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 100%;
+  background: #fff;
+  border-radius: 45px 0 0 45px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 10;
+}
 
+#header .m_gnb_wrap.on {
+  visibility: visible;
+  opacity: 1;
+}
+#header .m_gnb_wrap .m_top_menu {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
 
+#header .m_gnb_wrap .m_top_menu li {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 36px;
+  border-radius: 18px;
+}
 
+#header .m_gnb_wrap .m_top_menu li+li {
+  margin-left: 6px;
+}
 
+#header .m_gnb_wrap .m_top_menu a {
+  padding: 10px 14px;
+}
 
+#header .m_gnb_wrap .m_top_menu span {
+  line-height: 36px;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+}
 
-
-
-
-
+#header .m_gnb_wrap .m_top_menu a img {
+  margin-top: 8px;
+  margin-left: 4px;
+}
 
 
 
@@ -976,6 +1023,66 @@
 
 /* 테블릿 분기점 */
 @media(max-width:1200px) {
+  #header .header_top{
+    display: none;
+  } 
+  #header .header_bottom .gnb{
+    display: none;
+  }
+  #header .m_gnb_wrap {
+    opacity: 1;
+  }
+  #header .open_btn {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    width: 22px;
+    z-index: 9999;
+  }
+  #header .close_btn {
+    display: none;
+  }
+  #header .m_gnb_body {
+    padding: 11px 0 30px;
+    height: calc(100% - 148px);
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #header .m_gnb_body .m_gnb>li>a {
+    display: block;
+    padding: 11px 20px 11px 38px;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+
+  #header .m_gnb_body .m_gnb>li>a>span {
+    font-size: 21px;
+    font-family: 'Binggrae', sans-serif;
+    font-weight: 700;
+    position: relative;
+  }
+
+  #header .m_gnb_body .m_gnb>li>a img {
+    width: 10px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* depth2 */
+  #header .m_gnb_body .depth2 {
+    max-height: 0;
+    width: 100%;
+    background: #f7f7f7;
+    overflow: hidden;
+    transition: all 0.4s;
+    padding: 0 20px 0 38px;
+  }
 
 }
 
