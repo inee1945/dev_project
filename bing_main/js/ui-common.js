@@ -83,16 +83,15 @@ $(document).ready(function () {
 
     if (sct < 300) {
       $(".btn_wrap .scroll_btn img").css("transform", "rotate(" + 180 + "deg)");
-      return;
     } else if (sct >= 300) {
       $(".btn_wrap .scroll_btn img").css("transform", "rotate(" + 0 + "deg)");
-      return;
     }
   });
 
   $("#footer .scroll_btn").on("click", function () {
     let sct = $(window).scrollTop();
-    let scrY = sct < 300 ? 2955 : window.screenY - 2955;
+    let hei = $(window).prop("scrollHeight");
+    let scrY = sct < 300 ? 2955 : -sct;
 
     window.scrollBy({
       top: scrY,

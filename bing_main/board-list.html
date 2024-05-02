@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/board.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
@@ -128,7 +128,7 @@
                 <li>
                      <a href="#">뉴스룸</a>
                     <ul class="depth02">
-                        <li><a href="#">새소식</a></li>
+                        <li><a href="board-list.html">새소식</a></li>
                         <li><a href="#">보도자료</a></li>
                         <li><a href="#">빙그레 스토리</a></li>
                         <li><a href="#">미디어 <br>라이브러리</a></li>
@@ -171,31 +171,29 @@
         </div>
       </header>
      
-      <main id="sub_container">
+      <main id="board_list_container">
         <div class="inner">
-          <div class="login_area">
-            <h2 class="login_txt">ID로그인</h2>
-            <form>
-              <fieldset>
-                <legend>로그인 </legend>
-                  <div class="input_wrap">
-                    <input type="text" class="inp" placeholder="ID를 입력하세요">
-                    <input type="password" class="inp" placeholder="비밀번호를 입력하세요">
-                  </div>
-                  <div class="login_etc">
-                    <input type="checkbox" id="check" class="blind">
-                    <label for="check">
-                      로그인 상태 유지
-                    </label>
-                  </div>
-                  <div>
-                    <button type="button"  class="submit">로그인</button>
-                  </div>
-              </fieldset>
-            </form>
+          <h2 class="title_txt">새소식</h2>
+          <form>
+            <fieldset>
+              <legend>게시물 검색</legend>
+              <div class="option_list">
+                <div class="select_wrap">
+                  <select>
+                    <option>제목</option>
+                    <option>내용</option>
+                    <option>제목+내용</option>
+                  </select>
+                </div>
+                <input type="search" >
+              </div>
+              <div class="search_btn_area">
+                <button type="button" class="search_btn">검색</button>
+              </div>
+            </fieldset>
+          </form>
+          <div class="board_list">
             
-          </div>
-          <div class="link_wrap">
 
           </div>
         </div>
