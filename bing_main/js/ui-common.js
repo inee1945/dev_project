@@ -99,4 +99,18 @@ $(document).ready(function () {
       behavior: "smooth",
     });
   });
+
+  //--------게시판 쓰기-------------
+  $(".write_btn").on("click", function () {
+    let _tr, _td1, _td2, _td3, _td4;
+
+    _tr += `<tr>`;
+    _tr += `<td class='td td1'>1</td>`;
+    _tr += `<td class='td td2'>제목제제목</td>`;
+    _tr += `<td class='td td3'>100</td>`;
+    _tr += `<td class='td td4'>2024-01-01</td>`;
+    _tr += `</tr>`;
+
+    $("#board_list_table>tbody").append(_tr);
+  });
 });

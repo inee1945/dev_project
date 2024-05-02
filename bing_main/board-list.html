@@ -174,10 +174,10 @@
       <main id="board_list_container">
         <div class="inner">
           <h2 class="title_txt">새소식</h2>
-          <form>
+          <form class="form_list">
             <fieldset>
               <legend>게시물 검색</legend>
-              <div class="option_list">
+              <div class="option_wrap">
                 <div class="select_wrap">
                   <select>
                     <option>제목</option>
@@ -185,7 +185,10 @@
                     <option>제목+내용</option>
                   </select>
                 </div>
-                <input type="search" >
+                <div class="search_input">
+                  <input type="search" placeholder="검색어를 입력하세요.">
+                </div>
+                
               </div>
               <div class="search_btn_area">
                 <button type="button" class="search_btn">검색</button>
@@ -193,7 +196,27 @@
             </fieldset>
           </form>
           <div class="board_list">
-            
+            <table id="board_list_table">
+              <caption>공지사항</caption>
+              <colgroup>
+                <col style="width: 100px;">
+                <col \>
+                <col style="width: 150px;">
+                <col style="width: 180px;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">조회수</th>
+                  <th scope="col">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+               
+              </tbody>
+             
+            </table>  
 
           </div>
         </div>
